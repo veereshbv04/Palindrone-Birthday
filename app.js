@@ -31,5 +31,11 @@ function obtainDifferentFormate(year,month,date){
 
 
 function isPalindrome(dateToCheck){
-    
+    const max=Math.floor(dateToCheck.length/2);
+    for(let i=0; i<max; i++){
+        if(dateToCheck[i]!= dateToCheck[dateToCheck.length-i-1]){
+            return false;
+        }
+    }
+    return true;
 }
