@@ -11,17 +11,12 @@ submit.addEventListener("click",(e)=>{
     console.log("Submite button pressed");
     const dateArray = String(userDate.value).split("-");
     console.log(dateArray.value);
-  
-       
-      
- 
-        const year =dateArray[0];
-        const month = dateArray[1];
-        const date = dateArray[2];
-        obtainDifferentFormate(year,month,date);
-   
 
-   
+    const year =dateArray[0];
+    const month = dateArray[1];
+    const date = dateArray[2];
+    obtainDifferentFormate(year,month,date);
+
 })
 
 function obtainDifferentFormate(year,month,date){
