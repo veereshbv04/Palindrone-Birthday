@@ -1,0 +1,27 @@
+
+body{
+    background-color: aqua;
+    
+}
+
+img{
+    z-index: -1;
+}
+
+div{
+    margin: auto;
+    margin-top: 20%;
+    /* margin-left: 20%; */
+    max-width:50% ;
+    width: 100%;
+    height: 80%;
+    background-color: rgb(158, 255, 93);
+    border-radius: 2rem;
+    border-style:ridge;
+    border-width: 1rem;
+    border-color: var(--primary-backgroundcolor);
+    font-size: 1rem;
+    font-style: italic;
+    padding: 1rem;
+ 
+}
