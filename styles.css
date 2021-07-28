@@ -5,21 +5,41 @@ body{
 }
 
 img{
+
+    min-height: 100%;
+    min-width: 1024px;
+
+    width: 100%;
+    height: auto;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+
     z-index: -1;
+
 }
 
-div{
+
+#userbirthdate{
+        text-align: center;
+        font-size: medium;
+        font-weight: bold;
+}
+
+#main-div{
     margin: auto;
     margin-top: 20%;
     /* margin-left: 20%; */
-    max-width:50% ;
-    width: 100%;
+    max-width:40% ;
+    width: 50%;
     height: 80%;
     background-color: rgb(158, 255, 93);
     border-radius: 2rem;
     border-style:ridge;
     border-width: 1rem;
-    border-color: var(--primary-backgroundcolor);
+    border-color: aqua;
     font-size: 1rem;
     font-style: italic;
     padding: 1rem;
