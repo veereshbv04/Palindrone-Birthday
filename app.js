@@ -9,14 +9,19 @@ console.log("Js file is connected");
 submit.addEventListener("click",(e)=>{
     e.preventDefault();
     console.log("Submite button pressed");
-    console.log(userDate);
-    const dateArray = String(userDate).split("-");
-    const year =dateArray[0];
-    const month = dateArray[1];
-    const date = dateArray[2];
-    console.log(dateArray);
-    obtainDifferentFormate(year,month,date);
+    const dateArray = String(userDate.value).split("-");
+    console.log(dateArray.value);
+  
+       
+      
+ 
+        const year =dateArray[0];
+        const month = dateArray[1];
+        const date = dateArray[2];
+        obtainDifferentFormate(year,month,date);
+   
 
+   
 })
 
 function obtainDifferentFormate(year,month,date){
@@ -25,7 +30,7 @@ function obtainDifferentFormate(year,month,date){
     const dateFormate2 = date + month + year;
     const dateFormate3 = month+date+year.substring(2);
     const dateFormate4 = Number(month)+date+year;
-    console.log(dateArray);
+    console.log(dateFormate1,dateFormate2,dateFormate3,dateFormate4);
 
     if (isPalindrome(dateFormate1)){
         console.log("in dateformate1");
