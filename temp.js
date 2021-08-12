@@ -13,8 +13,8 @@ function isPalindrome(str){
 }
 
 var date = {
-    day :31,
-    month :12,
+    day :11,
+    month :2,
     year : 2020
 };
 
@@ -52,7 +52,7 @@ function convertDateToString(date){
 function getAllDateFormats(date){
 
     var datestr = convertDateToString(date);
-    console.log(datestr)
+   
 
     var ddmmyyyy = datestr.day + datestr.month + datestr.year;
     var mmddyyyy = datestr.month + datestr.day + datestr.year;
@@ -71,6 +71,7 @@ function checkPalindromeForAllDateFormats(date){
     var flag = false;
     for(let i=0; i<listOfPalindrome.length; i++){
         if(isPalindrome(listOfPalindrome[i])){
+            console.log("palindrome is " + listOfPalindrome[i]);
             flag = true;
             break;
         }
@@ -93,7 +94,6 @@ function isLeapYear(year){
     return false;
 
 }
-
 
 
 function getNextDate(date){
@@ -138,8 +138,25 @@ function getNextDate(date){
 
 }
 
-console.log(getNextDate(date))
 
 function getNextPalindromeDate(date){
+    var count =0;
+    var nextDate = getNextDate(date);
+
+    while(1){
+        count++;
+        var isPalindrome = checkPalindromeForAllDateFormats(nextDate);
+        if(isPalindrome){
+            break;
+        }
+        nextDate = getNextDate(nextDate);
+    }
+    return [count, nextDate];
 
 }
+
+
+console.log(getNextPalindromeDate(date));
+
+
+
