@@ -7,6 +7,7 @@ console.log("Js file is connected");
 
 
 submit.addEventListener("click",(e)=>{
+    console.log(userDate.value);
     e.preventDefault();
     console.log("Submite button pressed");
     const dateArray = String(userDate.value).split("-");
