@@ -12,11 +12,6 @@ function isPalindrome(str){
     return str === reverse
 }
 
-var date = {
-    day :11,
-    month :2,
-    year : 2020
-};
 
 function convertDateToString(date){
     var datestr = { day: " ", month:" ", year:""};
@@ -154,6 +149,18 @@ function getNextPalindromeDate(date){
     return [count, nextDate];
 
 }
+
+function getPreviousPalindromeDate(date){
+    
+}
+
+
+
+var date = {
+    day :8,
+    month :8,
+    year : 2021
+};
 
 
 console.log(getNextPalindromeDate(date));
